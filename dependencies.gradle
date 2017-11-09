@@ -1,0 +1,24 @@
+ext {
+    def ibmmqVersion = '7.5.0.3'
+    def javaeeVersion = '7.0'
+    def junitVersion = '4.12'
+    def lombokVersion = '1.16.18'
+
+    commons = [
+            shared: project(':shared')
+    ]
+
+    libraries = [
+            jms           : "com.ibm:mqjms:${ibmmqVersion}",
+            jmqi          : "com.ibm.mq:jmqi:${ibmmqVersion}",
+            dhbcore       : "com.ibm.mq:dhbcore:${ibmmqVersion}",
+            commonservices: "com.ibm.mq:commonservices:${ibmmqVersion}",
+            connector     : "com.ibm.mq:connector:${ibmmqVersion}",
+            headers       : "com.ibm.mq:headers:${ibmmqVersion}",
+            pcf           : "com.ibm.mq:pcf:${ibmmqVersion}",
+            mq            : "com.ibm:mq:${ibmmqVersion}",
+            javaee        : "javax:javaee-api:${javaeeVersion}",
+            lombok        : "org.projectlombok:lombok:${lombokVersion}",
+            test          : "junit:junit:${junitVersion}"
+    ]
+}

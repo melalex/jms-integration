@@ -1,0 +1,11 @@
+apply plugin: 'application'
+
+mainClassName='com.jms.outbound.JmsInApplication'
+
+dependencies {
+    compile commons['shared']
+
+    compileOnly libraries['lombok']
+
+    testCompile libraries['test']
+}

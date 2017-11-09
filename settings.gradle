@@ -1,0 +1,5 @@
+rootProject.name = 'integration'
+
+include 'inbound'
+include 'outbound'
+include 'shared'

@@ -1,0 +1,15 @@
+dependencies {
+    compile libraries['jms']
+    compile libraries['jmqi']
+    compile libraries['dhbcore']
+    compile libraries['commonservices']
+    compile libraries['connector']
+    compile libraries['headers']
+    compile libraries['pcf']
+    compile libraries['mq']
+    compile libraries['javaee']
+
+    compileOnly libraries['lombok']
+
+    testCompile libraries['test']
+}
